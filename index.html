@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- MENU SUPERIOR -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-0 fixed-top">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse text-center justify-content-start" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#zonas">Maravillas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cultura">Cultura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- LOGO MENU SUPERIOR -->
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand  " href="#">
+                            TURISMO
+                        </a>
+                        <img src="/assets/images/argentina.svg" alt="Logo" width="40" height="50"
+                            class="d-inline-block align-items-center">
+                    </div>
+                </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNER ARGENTINA -->
+        <section id="banner">
+            <div class="position-relative banner__container--size shadow ">
+                <img src="./assets/images/bandera.jpg" class="card-img-top w-100"/>
+                <div class="position-absolute top-0 w-100 h-100">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div
+                                class="col d-flex justify-content-center align-items-center justify-content-md-start banner__img--shadow">
+                            </div>
+                            <div
+                                class="d-flex col-md-3 .offset-md-3 justify-content-center align-items-center align-items-md-center p-0 ">
+                                <div class="border border-5 p-3 pb-1">
+                                    <p class="text-light text-center fs-2 fw-bold">ARGENTINA</p>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-flex col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION DE ZONAS -->
+        <section id="zonas">
+            <div class="d-flex flex-column align-items-center my-4" id="cards">
+                <h5 class="mb-0">Conozca nuestras</h5>
+                <h2 class="text-uppercase">maravillas</h2>
+            </div>
+            <!-- IMAGENES -->
+            <div class="card-group mx-4">
+                <div class="card p-2 border ">
+                    <img src="./assets/images/argentina_landing.jpg" class=" hover-zoom card-img-top object-cover "
+                        height="200" alt="card-group-image">
+                    <div class="card-body">
+                        <span class="badge bg-primary  mb-2">Patagonia</span>
+                        <span class="badge bg-secondary">Santa Cruz</span>
+                        <h5 class="card-title">Glaciar Perito Moreno</h5>
+                        <p class="card-text">¡Ven a vivir una experiencia única en el Glaciar Perito Moreno! Este
+                            majestuoso monumento
+                            natural es uno de los atractivos turísticos más populares de Argentina y no te lo puedes
+                            perder.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="card  p-2 border">
+                    <img src="./assets/images/Congreso_de_la_Nación_Argentina_05_(banner_esVoy).jpg"
+                        class="card-img-top object-cover" height="200" alt="card-group-image">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Centro</span>
+                        <span class="badge bg-secondary">Buenos Aires</span>
+                        <h5 class="card-title">Ciudad Capital</h5>
+                        <p class="card-text">Esta vibrante ciudad ofrece una experiencia
+                            única e inolvidable. Con su rica cultura, su exquisita gastronomía, su arquitectura
+                            impresionante y
+                            su emocionante vida nocturna, no hay lugar en el mundo como Buenos Aires.</p>
+                    </div>
+
+                </div>
+                <div class="card p-2 border">
+                    <img src="./assets/images/banner_argentina.jpg" class="card-img-top object-cover" height="200"
+                        alt="card-group-image">
+                    <div class="card-body">
+                        <span class="badge bg-warning mb-2">Noroeste</span>
+                        <span class="badge bg-secondary">Jujuy</span>
+                        <h5 class="card-title">Cerro de los siete colores</h5>
+                        <p class="card-text">¡Descubre la maravilla natural del Cerro de los Siete Colores! Este
+                            impresionante
+                            paisaje ubicado en la provincia de Jujuy, Argentina, es un espectáculo visual que no te
+                            puedes perder.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CAROUSEL DE EVENTOS -->
+        <!--<section id="eventos">
+                            <div class="d-flex flex-column align-items-center my-4" id="cards">
+                                <h5 class="mb-0">Nuestra diversidad de culturas nos hace</h5>
+                                <h2 class="text-uppercase">unicos</h2>
+                            </div>
+                            <div id="carouselExampleCaptions" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            
+            
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active p-2">
+                                        <img src="/assets/images/cultura-de-Argentina.jpg" height="500" class=" d-block w-100" alt="0">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Glaciar Perito Moreno</h5>
+                                            <p>Explorá El Calafate y conocé sus curiosidades y características más típicas</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/images/cultura.jpg" height="500" class="d-block w-100 object-cover cover" alt="1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Cerro de los Siete Colores</h5>
+                                            <p>Colores pardos, marrones y morados: Compuesto por plomo y margos arnidosos, ricos en carbonato de calcio.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/images/cultura_baires.jpg" height="500" class="d-block w-100 object-cover cover" alt="2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Ciudad de Buenos Aires</h5>
+                                            <p>Buenos Aires es la gran capital cosmopolita de Argentina.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/assets/images/mes_pachamama.jpg" height="500" class="d-block w-100 object-cover cover" alt="4">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Ciudad de Buenos Aires</h5>
+                                            <p>Buenos Aires es la gran capital cosmopolita de Argentina.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </section>-->
+        <section id="cultura">
+            <div class="d-flex flex-column align-items-center my-4" id="cards">
+                <h5 class="mb-0">Nuestra diversidad de culturas nos hace</h5>
+                <h2 class="text-uppercase">unicos</h2>
+            </div>
+            <div class="container-fluid pr-0 mt-4">
+                <div class="row">
+                    <div class="col-md-6 p-0 shadow">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/assets/images/cultura-de-Argentina.jpg" class="d-block w-100" height="450px"
+                                        alt="Fiestas populares">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/cultura_baires.jpg" class="d-block w-100" height="450px"
+                                        alt="Caminito">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/mes_pachamama.jpg" class="d-block w-100" height="450px"
+                                        alt="Fiesta de la pachamama">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/cultura.jpg" class="d-block w-100" height="450px"
+                                        alt="Fiestas populares">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/assets/images/cultura_patag.jpg" class="d-block w-100" height="450px"
+                                        alt="Patagonia">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-dark shadow text-light">
+                        <div class="p-3">
+                            <h3>En Argentina, la diversidad cultural nos une y enriquece nuestra identidad nacional.
+                            </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minus mollitia illo,
+                                aut tempore beatae officia ea
+                                laboriosam ipsa quos, libero obcaecati quasi ab odit
+                                consequatur saepe, culpa soluta quaerat?. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Voluptate dolorum
+                                autem ipsum delectus voluptatem, aperiam suscipit vero quas accusantium mollitia?
+                                Nostrum praesentium optio quasi in
+                                tempora eius expedita nihil. Vel? Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Consectetur voluptate aspernatur,
+                                incidunt exercitationem ea necessitatibus sed nostrum soluta iste in officiis magnam,
+                                voluptatum optio voluptatem animi quisquam autem. Hic, iste?</p>
+        </section>
+
+        <!-- FORMULARIO -->
+        <section id="formulario">
+            <div class="row text-dark mx-4 my-4 py-4 rounded">
+
+                <div class="d-flex flex-column align-items-center my-4 mb-2">
+                    <h5 class="mb-0">Para conocer nuestro País</h5>
+                    <h2 class="text-uppercase">contactanos</h2>
+                </div>
+
+                <form class="row g-3 m-0">
+                    <div class="col-md-6">
+                        <label class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Domicilio</label>
+                        <input type="text" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">Provincia</label>
+                        <select id="inputState" class="form-select">
+                            <option selected></option>
+                            <option value="0">Buenos Aires</option>
+                            <option value="1">Santa Fe</option>
+                            <option value="2">Córdoba</option>
+                            <option value="3">Entre Rios</option>
+                            <option value="4">Mendoza</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Código Postal</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Deseo suscribirme al Newsletter
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container-fluid bg-dark py-3">
+            <nav class="d-flex flex-column flex-md-row text-center justify-content-around">
+                <div>Ministerio de Turismo y Deportes de la Nacion</div>
+                <div>Av. Sta. Fe 873, C1059ABC CABA</div>
+                <a href="#">Mapa de sitio</a>
+                <a href="#">Privacidad</a>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+
+
+<!-- JavaScript de Bootstrap (requiere jQuery) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+</html>

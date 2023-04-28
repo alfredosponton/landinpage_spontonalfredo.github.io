@@ -1,0 +1,92 @@
+#zonas {
+    padding-top: 50px;
+}
+
+#cultura {
+    padding-top: 50px;
+}
+#banner {
+    margin-top: 66px;
+}
+
+.banner__container--size {
+    height: 40vh;
+}
+
+#banner > div > img {
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+nav div .navbar-nav a {
+    color: rgb(133, 133, 133);
+}
+
+
+nav div .navbar-nav a:hover {
+    color: rgb(48, 170, 197) !important
+}
+
+nav div .navbar-nav .active {
+    color: rgb(48, 170, 197) !important
+}
+
+nav div .navbar-nav .active:hover {
+    color: rgb(255, 255, 255) !important
+}
+
+
+
+section div .card img {
+    opacity: 80%;
+
+}
+section div .card img:hover {
+    opacity: 100%;
+    filter: saturate(160%);
+    transition: 1s all;
+
+}
+
+.form-check input:checked {
+    background-color: rgbrgb(48, 170, 197);
+    border-color: rgbrgb(48, 170, 197);
+}
+
+form > div > button {
+    background-color: rgb(48, 170, 197) !important;
+}
+
+form > div > button:hover {
+    background-color: rgb(41, 139, 161) !important;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: rgb(133, 133, 133) !important;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+footer a:hover {
+    color: rgb(48, 170, 197) !important;
+    transform: scale(1.1);
+    transition: 0.5s all;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+footer > div > nav > div {
+    color: rgb(133, 133, 133) !important;
+}

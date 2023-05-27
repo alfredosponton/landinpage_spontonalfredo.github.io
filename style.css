@@ -90,3 +90,16 @@ footer a:hover {
 footer > div > nav > div {
     color: rgb(133, 133, 133) !important;
 }
+
+.form-tarifa{
+    display: flex;
+    justify-content: center;
+}
+
+.div-tarifa {
+    width: 75%;
+}
+
+.botton-tarifa {
+    width: 100px;
+}

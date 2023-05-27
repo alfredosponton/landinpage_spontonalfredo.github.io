@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Tarifas</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-0 fixed-top">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse text-center justify-content-start" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- LOGO MENU SUPERIOR -->
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand  " href="#">
+                                TURISMO
+                            </a>
+                            <img src="./assets/images/argentina.svg" alt="Logo" width="40" height="50" class="d-inline-block align-items-center">
+                        </div>
+                    </nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- CATEGORIAS -->
+            <section id="zonas">
+                <div class="d-flex flex-column align-items-center my-4" id="cards">
+                    <h5 class="mb-0">Nuestras</h5>
+                    <h2 class="text-uppercase">TARIFAS</h2>
+                </div>
+                <!-- IMAGENES -->
+                <div class="card-group mx-4">
+                    <div class="card p-2 border ">
+                        <img src="/assets/images/familia.png" class=" hover-zoom card-img-top object-cover " alt="Familias">
+                        <div class="card-body">
+                            <span class="badge bg-primary  mb-2">Descuento 20%</span>
+                            <span class="badge bg-secondary">Media pensión</span>
+                            <h5 class="card-title">Familias</h5>
+                            <p class="card-text">¡Ven a vivir una experiencia única en familia!. }
+                                                                Comprando el paquete familiar podrás acceder a un descuento del 20% sobre el total de la compra..
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="card  p-2 border">
+                        <img src="./assets/images/estudiantes.jpg" class="card-img-top object-cover" alt="Estudiantes">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Descuento 30%</span>
+                            <span class="badge bg-secondary">Seguro incluido</span>
+                            <h5 class="card-title">Estudiantes</h5>
+                            <p class="card-text">¡Vive una experiencia unica junto a tus compañeros! Los grupos escolares que quieran conocer nuestro País contarán con 
+                                                                                un descuento del 30% para poder disfrutar de una aventura única e inolvidable.</p>
+                        </div>
+
+                    </div>
+                    <div class="card p-2 border">
+                        <img src="/assets/images/jubilados-anses.png" class="card-img-top object-cover" alt="Jubilados">
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Descuento 50%</span>
+                            <span class="badge bg-secondary">Pensión completa</span>
+                            <h5 class="card-title">Jubilados</h5>
+                            <p class="card-text">¡Descubre las maravillas de nuestro país! Ser parte de la comunidad PAMI 
+                                                                tiene beneficios exclusivos, también cuando viajás. No dejes escapar esta oportunidad de cumplir 
+                                                                el sueño de viajar y, además, ahorrar en tus vacaciones.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FORMULARIO -->
+            <section id="formulario" class="form-tarifa">
+                <div
+                    class="row text-dark rounded div-tarifa">
+
+                    <!-- CABECERA -->
+                    <div class="d-flex flex-column align-items-center my-4 mb-2">
+                        <h5 class="mb-0">VENTA</h5>
+                        <h2 class="text-uppercase">VALOR PAQUETE POR PERSONA $75.000</h2>
+                    </div>
+
+                    <!-- FORMULARIO -->
+                    <form class="row g-3 m-0">
+                        <div class="col-md-6">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="inputSurname">
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="inputNumber">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Categoría</label>
+                            <select id="inputCategory" class="form-select">
+                                <option selected></option>
+                                <option value="0">Grupo familiar</option>
+                                <option value="1">Estudiante</option>
+                                <option value="2">Jubilado</option>
+                                <option value="3">Ninguno</option>
+                            </select>
+                        </div>
+                        <div class="col-6 ">
+                            <button id="btnDelete" type="submit" class="btn btn-primary botton-tarifa">Borrar</button>
+                            <button id="btnResume" type="submit" class="btn btn-primary botton-tarifa">Resumen</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+        </main>
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container-fluid bg-dark py-3 mt-4">
+                <nav class="d-flex flex-column flex-md-row text-center justify-content-around">
+                    <div>Ministerio de Turismo y Deportes de la Nacion</div>
+                    <div>Av. Sta. Fe 873, C1059ABC CABA</div>
+                    <a href="#">Mapa de sitio</a>
+                    <a href="#">Privacidad</a>
+                </nav>
+            </div>
+
+        </footer>
+
+
+    </body>
+
+
+    <!-- JavaScript de Bootstrap (requiere jQuery) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+</html>

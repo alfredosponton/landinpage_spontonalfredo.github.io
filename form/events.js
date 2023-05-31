@@ -66,7 +66,7 @@ const submit = (e) => {
     const submitAccepted = values.every(value => value)
 
     submitAccepted 
-    ? location.href = '/exito.html'
+    ? location.href = './exito.html'
     : alert ('Debes completar todos los campos')
 
     console.log(submitAccepted)

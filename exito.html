@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Compra exitosa</title>
+</head>
+
+<body>
+
+    <!-- MENU SUPERIOR -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow p-0 fixed-top">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse text-center justify-content-start" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tarifas.html">Tarifas</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- LOGO MENU SUPERIOR -->
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand  " href="#">
+                            TURISMO
+                        </a>
+                        <img src="./assets/images/argentina.svg" alt="Logo" width="40" height="50"
+                            class="d-inline-block align-items-center">
+                    </div>
+                </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNER ARGENTINA -->
+        <section id="banner">
+            <div class="position-relative banner__container--size shadow ">
+                <img src="./assets/images/bandera.jpg" class="card-img-top w-100"/>
+                <div class="position-absolute top-0 w-100 h-100">
+                    <div class="container-fluid h-100">
+                        <div class="row h-100">
+                            <div
+                                class="col d-flex justify-content-center align-items-center justify-content-md-start banner__img--shadow">
+                            </div>
+                            <div
+                                class="d-flex col-md-3 .offset-md-3 justify-content-center align-items-center align-items-md-center p-0 ">
+                                <div class="border border-5 p-3 pb-1">
+                                    <p class="text-light text-center fs-2 fw-bold">ARGENTINA</p>
+                                </div>
+                            </div>
+                            <div class="d-none d-md-flex col-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="cultura">
+        <div class="d-flex flex-column align-items-center my-4 " id="cards">
+            <h5 class="mb-0">Compra realizada con éxito</h5>
+            <h2 class="text-uppercase">¡muchas gracias!</h2>
+          
+        </div>
+        
+    </section>
+
+     <!-- FORMULARIO -->
+     <section id="formulario" class="pt-2">
+        <div class="row text-light mx-4 my-4 py-4 rounded bg-dark">
+
+            <div class="d-flex flex-column align-items-center my-4 mb-2">
+                <h5 class="mb-0">Para más información</h5>
+                <h2 class="text-uppercase">contactanos</h2>
+            </div>
+
+            <form class="row g-3 m-0">
+                <div class="col-md-6">
+                    <label class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                </div>
+
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Domicilio</label>
+                    <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Provincia</label>
+                    <select id="inputState" class="form-select">
+                        <option selected></option>
+                        <option value="0">Buenos Aires</option>
+                        <option value="1">Santa Fe</option>
+                        <option value="2">Córdoba</option>
+                        <option value="3">Entre Rios</option>
+                        <option value="4">Mendoza</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Deseo suscribirme al Newsletter
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container-fluid bg-dark py-3">
+            <nav class="d-flex flex-column flex-md-row text-center justify-content-around">
+                <div>Ministerio de Turismo y Deportes de la Nacion</div>
+                <div>Av. Sta. Fe 873, C1059ABC CABA</div>
+                <a href="#">Mapa de sitio</a>
+                <a href="#">Privacidad</a>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+
+
+
+<!-- JavaScript de Bootstrap (requiere jQuery) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+</html>

@@ -39,11 +39,11 @@ nav div .navbar-nav .active:hover {
 
 
 
-section div .card img {
+section div .card .img {
     opacity: 80%;
 
 }
-section div .card img:hover {
+section div .card .img:hover {
     opacity: 100%;
     filter: saturate(160%);
     transition: 1s all;
@@ -97,9 +97,22 @@ footer > div > nav > div {
 }
 
 .div-tarifa {
-    width: 75%;
+    width: 60%;
 }
 
-.botton-tarifa {
-    width: 100px;
+
+
+card__align--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.button-tarifa {
+    background-color: rgb(48, 170, 197) !important;
+}
+.button-tarifa:hover {
+    background-color: rgb(41, 139, 161) !important;
 }

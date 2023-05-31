@@ -47,22 +47,22 @@
                 </div>
                 <!-- IMAGENES -->
                 <div class="card-group mx-4">
-                    <div class="card p-2 border ">
+                    <div class=" btn card p-2 border bg-transparent" data-index = "0">
                         <img src="/assets/images/familia.png" class=" hover-zoom card-img-top object-cover " alt="Familias">
                         <div class="card-body">
-                            <span class="badge bg-primary  mb-2">Descuento 20%</span>
+                            <span class="badge bg-primary  mb-2">Descuento 15%</span>
                             <span class="badge bg-secondary">Media pensión</span>
                             <h5 class="card-title">Familias</h5>
-                            <p class="card-text">¡Ven a vivir una experiencia única en familia!. }
+                            <p class="card-text">¡Ven a vivir una experiencia única en familia!.
                                                                 Comprando el paquete familiar podrás acceder a un descuento del 20% sobre el total de la compra..
                             </p>
                         </div>
 
                     </div>
-                    <div class="card  p-2 border">
+                    <div class="btn card  p-2 border bg-transparent" data-index = "1">
                         <img src="./assets/images/estudiantes.jpg" class="card-img-top object-cover" alt="Estudiantes">
                         <div class="card-body">
-                            <span class="badge bg-success mb-2">Descuento 30%</span>
+                            <span class="badge bg-success mb-2">Descuento 50%</span>
                             <span class="badge bg-secondary">Seguro incluido</span>
                             <h5 class="card-title">Estudiantes</h5>
                             <p class="card-text">¡Vive una experiencia unica junto a tus compañeros! Los grupos escolares que quieran conocer nuestro País contarán con 
@@ -70,10 +70,10 @@
                         </div>
 
                     </div>
-                    <div class="card p-2 border">
+                    <div class="btn card p-2 border bg-transparent" data-index = "2">
                         <img src="/assets/images/jubilados-anses.png" class="card-img-top object-cover" alt="Jubilados">
                         <div class="card-body">
-                            <span class="badge bg-warning mb-2">Descuento 50%</span>
+                            <span class="badge bg-warning mb-2">Descuento 80%</span>
                             <span class="badge bg-secondary">Pensión completa</span>
                             <h5 class="card-title">Jubilados</h5>
                             <p class="card-text">¡Descubre las maravillas de nuestro país! Ser parte de la comunidad PAMI 
@@ -97,37 +97,44 @@
                     </div>
 
                     <!-- FORMULARIO -->
-                    <form class="row g-3 m-0">
+                    <form name="formularioTarifa" class="row g-3 m-0">
                         <div class="col-md-6">
                             <label class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="inputName">
+                            <input name="inputName" type="text" class="form-control" id="inputName">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label">Apellido</label>
-                            <input type="text" class="form-control" id="inputSurname">
+                            <input name="inputSurname" type="text" class="form-control" id="inputSurname">
                         </div>
 
                         <div class="col-12">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail">
+                            <input name="inputEmail" type="email" class="form-control" id="inputEmail">
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label">Cantidad</label>
-                            <input type="number" class="form-control" id="inputNumber">
+                            <label class="form-label" for="inputNumber">Cantidad</label>
+                            <input name="inputNumber" type="number" class="form-control" id="inputNumber">
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label">Categoría</label>
-                            <select id="inputCategory" class="form-select">
-                                <option selected></option>
-                                <option value="0">Grupo familiar</option>
-                                <option value="1">Estudiante</option>
-                                <option value="2">Jubilado</option>
-                                <option value="3">Ninguno</option>
+                            <label class="form-label" for="category">Categoría</label>
+                            <select name="category" value="none" id="category" class="form-select">
+                                <option selected="" value="none"></option>
+                                <option value="a">Grupo familiar</option>
+                                <option value="b">Estudiante</option>
+                                <option value="c">Jubilado</option>
                             </select>
                         </div>
-                        <div class="col-6 ">
-                            <button id="btnDelete" type="submit" class="btn btn-primary botton-tarifa">Borrar</button>
-                            <button id="btnResume" type="submit" class="btn btn-primary botton-tarifa">Resumen</button>
+                        <div id="total" class="bg-primary bg-opacity-25 rounded-1 p-2 my-4">
+ 
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <button id="btnDelete"  class="btn btn-primary w-100 button-tarifa">Borrar</button>
+                            </div>
+                            <div class = "col-6">
+                                <button id="btnResume"  class="btn btn-primary w-100 button-tarifa">Resumen</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -155,5 +162,17 @@
     <!-- JavaScript de Bootstrap (requiere jQuery) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    
+    <script src="/form/data.js"></script>
+    <script src="/js/cards/dom.js"></script>
+    <script src="/form/dom.js"></script>
+    
+    <script src="/js/cards/cards.js"></script>
+    
+    <script src="/js/cards/utils.js"></script>
+    <script src="/js/cards/events.js"></script>
 
-</html>
+    <script src="/form/utils.js"></script>
+    <script src="/form/events.js"></script>
+    <script src="/mapeo/mapeo.js"></script>
+    </html>
